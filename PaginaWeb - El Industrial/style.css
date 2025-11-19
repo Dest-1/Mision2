@@ -300,4 +300,150 @@ th, td{
     margin-bottom: 15px;
 }
 
+.blog-1 p{
+    font-size: 16px;
+    /* background-color: #111111; */
+}
 
+.footer{
+    padding: 50px 0;
+    background-color: #111111;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a{
+    font-size: 16px;
+    color: #dcdcdc;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px){
+
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    .menu .navbar ul li a{
+        color: #ffffff;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .submenu:hover #carrito{
+        min-width: 100%;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .header-img{
+        display: none;
+    }
+
+    .header-txt{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+
+    .ofert{
+        padding: 30px 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .ofert-1{
+        margin-bottom: 30px;
+    }
+
+    .products{
+        padding: 0 30px 30px 30px;
+    }
+
+
+    .products h2{
+        margin-bottom: 30px;
+    }
+
+    .products-content{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .product img{
+        width: 200px;
+        height: 280px;
+    }
+
+    .icons{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .icon-1{
+        margin-bottom: 30px;
+    }
+
+    .blog{
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+    }
+
+    .blog-1{
+        margin-bottom: 30px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
