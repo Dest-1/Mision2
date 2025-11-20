@@ -13,6 +13,29 @@ font-family: 'Poppins', sans-serif;
     list-style: none;
 }
 
+#carrito-indicador {
+    background: red;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    right: -5px;
+    transition: transform 0.2s;
+}
+
+#carrito-indicador.activo {
+    transform: scale(1.3);
+}
+
+#contenedor-carrito{
+    display: flex;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -94,6 +117,16 @@ img{
     background-color: #4e4b5076;
     padding: 20px;
     min-width: 400px;
+}
+
+#vaciar-carrito{
+    display: inline-block;
+    margin-left: 8vw;
+    padding: 7px 10px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 table{
@@ -230,7 +263,7 @@ th, td{
 
 .product img{
     width: 250px;
-    height: 350px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
@@ -291,6 +324,7 @@ th, td{
 
 .blog-1 img{
     margin-bottom: 20px;
+    height: 250px;
 }
 
 .blog-1 h3{
